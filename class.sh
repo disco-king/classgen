@@ -47,7 +47,7 @@ elif ! cat .buff_file_for_example_cpp | sed "s/Example/${1}/g" > $c_name ||
 then
 	echo "Error"
 	echo "File creation failed"
-	rm -f c_name h_name
+	rm -f $c_name $h_name
 	rm -f .buff_file_for_example_cpp .buff_file_for_example_hpp
 	exit 4
 fi
