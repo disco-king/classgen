@@ -1,6 +1,7 @@
 #!/bin/bash
 
 #update path to the folder if necessary
+#Example should be the last word, no extentions needed
 
 path=~/.scripts/class/Example
 
