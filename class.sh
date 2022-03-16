@@ -1,5 +1,10 @@
 #!/bin/bash
 
+#update path to the folder if necessary
+
+path=~/.scripts/class/Example
+
+
 if [ -z $1 ]
 then
 	echo "Error"
@@ -8,6 +13,9 @@ then
 fi
 
 cwd=$(pwd)
+
+c_source_path=$path".cpp"
+h_source_path=$path".hpp"
 
 c_name="${cwd}/${1}.cpp"
 h_name="${cwd}/${1}.hpp"
@@ -27,8 +35,8 @@ else
 	echo
 fi
 
-if ! cat ~/.scripts/class/Example.cpp > ./.buff_file_for_example_cpp || 
-   ! cat ~/.scripts/class/Example.hpp > ./.buff_file_for_example_hpp
+if ! cat $c_source_path > ./.buff_file_for_example_cpp || 
+   ! cat $h_source_path > ./.buff_file_for_example_hpp
 then
 	echo "Error"
 	echo "Source files or destination folder inaccessible"
