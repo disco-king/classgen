@@ -6,6 +6,6 @@ This is a small script that creates .cpp and .hpp files with empty classes of Or
 
 where Classname is, quite obviously, the name of the class. Hint: creating an alias (ex. `alias=/path/to/class.sh`) in a bash config file will make this script even more comfortable to use.
 
-Keep in mind that you'll have to manually set the path variable in the script to indicate path to this folder in tour filesystem.
+Keep in mind that you'll have to manually set the path variable in the script to indicate path to this folder in your filesystem.
 
 Feel free to change .cpp and .hpp files to your liking. The script basically just changes the class name.
