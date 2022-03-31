@@ -1,3 +1,5 @@
+#pragma once
+
 #include <iostream>
 
 class Example
@@ -8,7 +10,7 @@ private:
 
 public:
 
-	Example(/*args*/);
+	Example();
 	Example(Example const &);
 	~Example();
 
