@@ -11,9 +11,9 @@ private:
 public:
 
 	Example();
-	Example(Example const &);
+	Example(Example const &src);
 	~Example();
 
-	Example & operator=(Example const &);
+	Example & operator=(Example const &src);
 
 };
